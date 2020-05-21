@@ -132,7 +132,7 @@
           <contract xmi:type="process:Contract" xmi:id="_LRfGyJD9Eeq-c7imKJrgdQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_LRfGy5D9Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_bgtHYJD9Eeq-c7imKJrgdQ" name="Validate your command" outgoing="_TbOYkJD-Eeq-c7imKJrgdQ" incoming="_gU2y4JD9Eeq-c7imKJrgdQ _g7c40JD9Eeq-c7imKJrgdQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_bgtHYJD9Eeq-c7imKJrgdQ" name="Validate the command" outgoing="_TbOYkJD-Eeq-c7imKJrgdQ" incoming="_gU2y4JD9Eeq-c7imKJrgdQ _g7c40JD9Eeq-c7imKJrgdQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_bgtucZD9Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_bgtucJD9Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_bgtucpD9Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
