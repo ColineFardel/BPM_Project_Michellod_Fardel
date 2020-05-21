@@ -439,7 +439,7 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_Rd3UB5D-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <correlation xmi:type="expression:TableExpression" xmi:id="_8XBjgJEFEeq2jb4JIXyuMQ"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_ZnP18JD-Eeq-c7imKJrgdQ" name="Update the inventory" outgoing="_r5lk4JD-Eeq-c7imKJrgdQ" incoming="_l3QPAJD-Eeq-c7imKJrgdQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_ZnP18JD-Eeq-c7imKJrgdQ" name="Update  inventory" outgoing="_r5lk4JD-Eeq-c7imKJrgdQ" incoming="_l3QPAJD-Eeq-c7imKJrgdQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ZnP18pD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ZnP18ZD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ZnP185D-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>

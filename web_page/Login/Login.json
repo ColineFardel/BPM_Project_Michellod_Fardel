@@ -1,0 +1,152 @@
+{
+  "designerVersion" : "1.10.54",
+  "id" : "Login",
+  "name" : "Login",
+  "lastUpdate" : 1589804091117,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "expression",
+            "value" : "Login"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Login"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "Login"
+          }
+        },
+        "reference" : "998f5c22-7711-480e-8245-d668cfc505b3",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "expression",
+            "value" : "Password"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Password"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "Password"
+          }
+        },
+        "reference" : "c27573ca-5d4f-4d3a-8fdb-5814054b0f1a",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "e63e9e04-6f58-40ff-972b-88c1d3641aba",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "Login" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByLogin [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByLogin\",\"displayName\":\"login\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Login\",\"value\":\"\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "Password" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByPassword [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByPassword\",\"displayName\":\"password\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Password\",\"value\":\"\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "bad1efb2-ec8b-49c7-8c06-78c17b648165",
+  "type" : "layout",
+  "description" : "Page generated with Bonita UI designer"
+}
