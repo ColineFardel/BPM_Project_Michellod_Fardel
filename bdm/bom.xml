@@ -3,8 +3,8 @@
     <businessObjects>
         <businessObject qualifiedName="com.company.model.Command">
             <fields>
-                <field type="STRING" length="255" name="Product" nullable="true" collection="true"/>
-                <field type="STRING" length="255" name="Price" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Product" fetchType="LAZY" name="Product" nullable="true" collection="true"/>
+                <field type="DOUBLE" length="255" name="Price" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="Command_Number" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
@@ -19,6 +19,25 @@
                 <field type="STRING" length="255" name="Firstname" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="Lastname" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="Email" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Inventory">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Product" fetchType="LAZY" name="Product" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Product">
+            <fields>
+                <field type="STRING" length="255" name="Name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="Product_Number" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="Price" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="NumberOfProducts" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
