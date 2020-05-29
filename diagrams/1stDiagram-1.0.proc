@@ -690,6 +690,74 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_UJAOoaDjEeqzlurh4stdLQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_UJAOoqDjEeqzlurh4stdLQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_UJAOo6DjEeqzlurh4stdLQ" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:Data" xmi:id="_JAsdMKGCEeq0NaN6XP5iqQ" name="mailObject" dataType="_NB3U0JD8Eeq-c7imKJrgdQ">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_JAsdMaGCEeq0NaN6XP5iqQ" name="Confirmation mail for your command" content="Confirmation mail for your command"/>
+          </data>
+          <data xmi:type="process:Data" xmi:id="_ffe-cKGCEeq0NaN6XP5iqQ" name="mailSender" dataType="_NB3U0JD8Eeq-c7imKJrgdQ">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_ffe-caGCEeq0NaN6XP5iqQ" name="computersale@computer.ch" content="computersale@computer.ch"/>
+          </data>
+          <connectors xmi:type="process:Connector" xmi:id="_zrMCwKGCEeq0NaN6XP5iqQ" documentation="&#x9;" name="Confirmation mail" definitionId="email" event="ON_ENTER" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_zrMCwaGCEeq0NaN6XP5iqQ" definitionId="email" version="1.1.0" modelVersion="7.10.0-001">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCwqGCEeq0NaN6XP5iqQ" key="smtpHost">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCw6GCEeq0NaN6XP5iqQ" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCxKGCEeq0NaN6XP5iqQ" key="smtpPort">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCxaGCEeq0NaN6XP5iqQ" name="465" content="465" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCxqGCEeq0NaN6XP5iqQ" key="sslSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCx6GCEeq0NaN6XP5iqQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCyKGCEeq0NaN6XP5iqQ" key="starttlsSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCyaGCEeq0NaN6XP5iqQ" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCyqGCEeq0NaN6XP5iqQ" key="userName">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCy6GCEeq0NaN6XP5iqQ" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCzKGCEeq0NaN6XP5iqQ" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCzaGCEeq0NaN6XP5iqQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMCzqGCEeq0NaN6XP5iqQ" key="from">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMCz6GCEeq0NaN6XP5iqQ" name="mailSender" content="mailSender" type="TYPE_VARIABLE" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_zrMC0KGCEeq0NaN6XP5iqQ" name="mailSender" dataType="_NB3U0JD8Eeq-c7imKJrgdQ"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC0aGCEeq0NaN6XP5iqQ" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC0qGCEeq0NaN6XP5iqQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC06GCEeq0NaN6XP5iqQ" key="to">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC1KGCEeq0NaN6XP5iqQ" name="email - Customer#getEmail" content="getEmail" type="TYPE_JAVA_METHOD_CALL" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zrMC1aGCEeq0NaN6XP5iqQ" name="email" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC1qGCEeq0NaN6XP5iqQ" key="bcc">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC16GCEeq0NaN6XP5iqQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC2KGCEeq0NaN6XP5iqQ" key="cc">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC2aGCEeq0NaN6XP5iqQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC2qGCEeq0NaN6XP5iqQ" key="subject">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC26GCEeq0NaN6XP5iqQ" name="Confirmation mail for your command" content="Confirmation mail for your command" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC3KGCEeq0NaN6XP5iqQ" key="html">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC3aGCEeq0NaN6XP5iqQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC3qGCEeq0NaN6XP5iqQ" key="message">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC36GCEeq0NaN6XP5iqQ" name="&lt;pattern-expression>" content="Hello !&#xD;&#xA;&#xD;&#xA;We're sending you this mail to confirm that your command has been saved well in our system. You will receive your command soon !&#xD;&#xA;&#xD;&#xA;Have a great day.&#xD;&#xA;&#xD;&#xA;Team sale computer." type="TYPE_PATTERN" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC4KGCEeq0NaN6XP5iqQ" key="headers">
+                <expression xmi:type="expression:TableExpression" xmi:id="_zrMC4aGCEeq0NaN6XP5iqQ"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC4qGCEeq0NaN6XP5iqQ" key="charset">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC46GCEeq0NaN6XP5iqQ" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC5KGCEeq0NaN6XP5iqQ" key="replyTo">
+                <expression xmi:type="expression:Expression" xmi:id="_zrMC5aGCEeq0NaN6XP5iqQ" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zrMC5qGCEeq0NaN6XP5iqQ" key="attachments">
+                <expression xmi:type="expression:ListExpression" xmi:id="_zrMC56GCEeq0NaN6XP5iqQ"/>
+              </parameters>
+            </configuration>
+          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_wSPC3KDmEeqzlurh4stdLQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_wSPC3aDmEeqzlurh4stdLQ" name="address" content="address" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wSPC3qDmEeqzlurh4stdLQ" name="address" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
