@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xmlns:transitions="http://www.bonitasoft.org/ns/studio/process/decision/transitions" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision http://www.bonitasoft.org/ns/studio/process/decision/transitions http://www.bonitasoft.org/ns/studio/process#//decision/transitions">
   <process:MainProcess xmi:id="_NB2toJD8Eeq-c7imKJrgdQ" name="1stDiagram" author="miche" bonitaVersion="7.10.4" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E34">
     <elements xmi:type="process:Pool" xmi:id="_Yui-QJD8Eeq-c7imKJrgdQ" name="Pool">
       <elements xmi:type="process:Lane" xmi:id="_Zc55EJD8Eeq-c7imKJrgdQ" name="Client lane" actor="_webaUJEEEeq2jb4JIXyuMQ">
@@ -18,8 +18,10 @@
                 <defaultValue xmi:type="expression:Expression" xmi:id="_hEissJj7EeqR2YN5fDIP-g" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
               </referencedElements>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_IvyvYpj7EeqR2YN5fDIP-g" content=""/>
-            <operator xmi:type="expression:Operator" xmi:id="_IvyvY5j7EeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setProduct">
+            <rightOperand xmi:type="expression:Expression" xmi:id="_IvyvYpj7EeqR2YN5fDIP-g" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dYyc8KMdEeq6aptnIU5r8w" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_IvyvY5j7EeqR2YN5fDIP-g" type="ASSIGNMENT" expression="setProduct">
               <inputTypes>java.util.List</inputTypes>
             </operator>
           </operations>
@@ -47,8 +49,10 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_lBd1QZj7EeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mEta8Jj7EeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_lBd1Qpj7EeqR2YN5fDIP-g" content=""/>
-            <operator xmi:type="expression:Operator" xmi:id="_lBd1Q5j7EeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setLogin">
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lBd1Qpj7EeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ejmqQKMdEeq6aptnIU5r8w" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lBd1Q5j7EeqR2YN5fDIP-g" type="ASSIGNMENT" expression="setLogin">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -56,8 +60,10 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_nfW0AZj7EeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_oUlL0Jj7EeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_nfW0Apj7EeqR2YN5fDIP-g" content=""/>
-            <operator xmi:type="expression:Operator" xmi:id="_nfW0A5j7EeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setPassword">
+            <rightOperand xmi:type="expression:Expression" xmi:id="_nfW0Apj7EeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fL7OgKMdEeq6aptnIU5r8w" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_nfW0A5j7EeqR2YN5fDIP-g" type="ASSIGNMENT" expression="setPassword">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -136,41 +142,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_bgtucZD9Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_bgtucJD9Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_bgtucpD9Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_76W4kJj7EeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_76W4kZj7EeqR2YN5fDIP-g" name="command_number" content="command_number" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8vS8gJj7EeqR2YN5fDIP-g" name="command_number" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command">
-                <defaultValue xmi:type="expression:Expression" xmi:id="_CNgRoJj8EeqR2YN5fDIP-g" name="init_command_number()" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Command"/>
-              </referencedElements>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_76W4kpj7EeqR2YN5fDIP-g" content=""/>
-            <operator xmi:type="expression:Operator" xmi:id="_76W4k5j7EeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setCommand_Number">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_Enb9cJj8EeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Enb9cZj8EeqR2YN5fDIP-g" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FR0XMJj8EeqR2YN5fDIP-g" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command">
-                <defaultValue xmi:type="expression:Expression" xmi:id="_eyweAJkAEeqR2YN5fDIP-g" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
-              </referencedElements>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Enb9cpj8EeqR2YN5fDIP-g" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_V4hqwJj8EeqR2YN5fDIP-g" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_Enb9c5j8EeqR2YN5fDIP-g" type="ASSIGNMENT" expression="containsAll">
-              <inputTypes>java.util.Collection</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_IiyYsJj8EeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_IiyYsZj8EeqR2YN5fDIP-g" name="price" content="price" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OoaTIJj8EeqR2YN5fDIP-g" name="price" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_IiyYspj8EeqR2YN5fDIP-g" name="price" content="price" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UD65kJj8EeqR2YN5fDIP-g" name="price" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_IiyYs5j8EeqR2YN5fDIP-g" type="ASSIGNMENT" expression="setPrice">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
           <operations xmi:type="expression:Operation" xmi:id="_gGKUtZkCEeqR2YN5fDIP-g">
             <leftOperand xmi:type="expression:Expression" xmi:id="_gGKUtpkCEeqR2YN5fDIP-g" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gGKUt5kCEeqR2YN5fDIP-g" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
@@ -183,156 +154,24 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_gGKUu5kCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_gGKUvJkCEeqR2YN5fDIP-g" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gGKUvZkCEeqR2YN5fDIP-g" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gGKUvJkCEeqR2YN5fDIP-g" name="price" content="price" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FAkC8KMfEeq6aptnIU5r8w" name="price" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_gGKUvpkCEeqR2YN5fDIP-g" name="productInput.Price" content="productInput?.Price" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_gGKUv5kCEeqR2YN5fDIP-g" name="productInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_gGKUwJkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setPrice">
-              <inputTypes>java.lang.String</inputTypes>
+              <inputTypes>java.lang.Double</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_gGKUwZkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_gGKUwpkCEeqR2YN5fDIP-g" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gGKUw5kCEeqR2YN5fDIP-g" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gGKUwpkCEeqR2YN5fDIP-g" name="command_number" content="command_number" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_F2F8wKMfEeq6aptnIU5r8w" name="command_number" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_gGKUxJkCEeqR2YN5fDIP-g" name="productInput.Command_Number" content="productInput?.Command_Number" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_gGKUxZkCEeqR2YN5fDIP-g" name="productInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_gGKUxpkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setCommand_Number">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hM56XJkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hM56XZkCEeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hM56XpkCEeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hM56X5kCEeqR2YN5fDIP-g" name="loginInput.Login" content="loginInput?.Login" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hM56YJkCEeqR2YN5fDIP-g" name="loginInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hM56YZkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setLogin">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hM56YpkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hM56Y5kCEeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hM56ZJkCEeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hM56ZZkCEeqR2YN5fDIP-g" name="loginInput.Password" content="loginInput?.Password" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hM56ZpkCEeqR2YN5fDIP-g" name="loginInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hM56Z5kCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setPassword">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hM56aJkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hM56aZkCEeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hM56apkCEeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hM56a5kCEeqR2YN5fDIP-g" name="loginInput.Address" content="loginInput?.Address" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hM56bJkCEeqR2YN5fDIP-g" name="loginInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hM56bZkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setAddress">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hM56bpkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hM56b5kCEeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hM56cJkCEeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hM56cZkCEeqR2YN5fDIP-g" name="loginInput.Firstname" content="loginInput?.Firstname" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hM56cpkCEeqR2YN5fDIP-g" name="loginInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hM56c5kCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setFirstname">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hM56dJkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hM56dZkCEeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hM56dpkCEeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hM56d5kCEeqR2YN5fDIP-g" name="loginInput.Lastname" content="loginInput?.Lastname" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hM56eJkCEeqR2YN5fDIP-g" name="loginInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hM56eZkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setLastname">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hM56epkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hM56e5kCEeqR2YN5fDIP-g" name="login" content="login" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hM56fJkCEeqR2YN5fDIP-g" name="login" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hM56fZkCEeqR2YN5fDIP-g" name="loginInput.Email" content="loginInput?.Email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hM56fpkCEeqR2YN5fDIP-g" name="loginInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hM56f5kCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setEmail">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hzQIrJkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hzQIrZkCEeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hzQIrpkCEeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hzQIr5kCEeqR2YN5fDIP-g" name="passwordInput.Login" content="passwordInput?.Login" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hzQIsJkCEeqR2YN5fDIP-g" name="passwordInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hzQIsZkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setLogin">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hzQIspkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hzQIs5kCEeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hzQItJkCEeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hzQItZkCEeqR2YN5fDIP-g" name="passwordInput.Password" content="passwordInput?.Password" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hzQItpkCEeqR2YN5fDIP-g" name="passwordInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hzQIt5kCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setPassword">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hzQIuJkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hzQIuZkCEeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hzQIupkCEeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hzQIu5kCEeqR2YN5fDIP-g" name="passwordInput.Address" content="passwordInput?.Address" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hzQIvJkCEeqR2YN5fDIP-g" name="passwordInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hzQIvZkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setAddress">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hzQIvpkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hzQIv5kCEeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hzQIwJkCEeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hzQIwZkCEeqR2YN5fDIP-g" name="passwordInput.Firstname" content="passwordInput?.Firstname" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hzQIwpkCEeqR2YN5fDIP-g" name="passwordInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hzQIw5kCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setFirstname">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hzQIxJkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hzQIxZkCEeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hzQIxpkCEeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hzQIx5kCEeqR2YN5fDIP-g" name="passwordInput.Lastname" content="passwordInput?.Lastname" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hzQIyJkCEeqR2YN5fDIP-g" name="passwordInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hzQIyZkCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setLastname">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_hzQIypkCEeqR2YN5fDIP-g">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hzQIy5kCEeqR2YN5fDIP-g" name="password" content="password" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hzQIzJkCEeqR2YN5fDIP-g" name="password" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hzQIzZkCEeqR2YN5fDIP-g" name="passwordInput.Email" content="passwordInput?.Email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_hzQIzpkCEeqR2YN5fDIP-g" name="passwordInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hzQIz5kCEeqR2YN5fDIP-g" type="JAVA_METHOD" expression="setEmail">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -342,7 +181,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_bgtud5D9Eeq-c7imKJrgdQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_bgtudpD9Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_bgtueZD9Eeq-c7imKJrgdQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_bgtuepD9Eeq-c7imKJrgdQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_HcUTsKMfEeq6aptnIU5r8w" name="taskAutogeneratedForm" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_bgtueJD9Eeq-c7imKJrgdQ">
             <inputs xmi:type="process:ContractInput" xmi:id="_gGKUsJkCEeqR2YN5fDIP-g" name="productInput" type="COMPLEX" dataReference="product" createMode="false">
@@ -388,6 +227,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_vibT0ZD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_vibT0JD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_vibT0pD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="__kefoKMcEeq6aptnIU5r8w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="__kefoaMcEeq6aptnIU5r8w" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_AU-IcKMdEeq6aptnIU5r8w" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="__kefoqMcEeq6aptnIU5r8w" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_A8HoAKMdEeq6aptnIU5r8w" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="__kefo6McEeq6aptnIU5r8w" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_vibT05D-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_vibT1JD-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_vibT1ZD-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -627,6 +475,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pDe6cpD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pDe6cZD-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pDe6c5D-Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_8t1psKMcEeq6aptnIU5r8w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_8t1psaMcEeq6aptnIU5r8w" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_99abMKMcEeq6aptnIU5r8w" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_8t1psqMcEeq6aptnIU5r8w" name="product" content="product" type="TYPE_VARIABLE" returnType="com.company.model.Command">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-6vmIKMcEeq6aptnIU5r8w" name="product" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Command"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_8t1ps6McEeq6aptnIU5r8w" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_pDe6dJD-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_pDe6dZD-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_pDe6dpD-Eeq-c7imKJrgdQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -860,8 +717,10 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8bT8sJD8Eeq-c7imKJrgdQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_8bT8sZD8Eeq-c7imKJrgdQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_EMD8MJD9Eeq-c7imKJrgdQ" name="Yes" target="_DQwxkJD9Eeq-c7imKJrgdQ" source="_5GZPUJD8Eeq-c7imKJrgdQ">
-        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_EMD8MZD9Eeq-c7imKJrgdQ"/>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_EMD8MJD9Eeq-c7imKJrgdQ" name="Yes" target="_DQwxkJD9Eeq-c7imKJrgdQ" source="_5GZPUJD8Eeq-c7imKJrgdQ" conditionType="DECISION_TABLE">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_qOGQkKMfEeq6aptnIU5r8w">
+          <defaultAction xmi:type="transitions:TakeTransitionAction" xmi:id="_qOG3oKMfEeq6aptnIU5r8w"/>
+        </decisionTable>
         <condition xmi:type="expression:Expression" xmi:id="_EMD8MpD9Eeq-c7imKJrgdQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Ns_f4JD9Eeq-c7imKJrgdQ" name="No" target="_LRefsJD9Eeq-c7imKJrgdQ" source="_5GZPUJD8Eeq-c7imKJrgdQ" isDefault="true">

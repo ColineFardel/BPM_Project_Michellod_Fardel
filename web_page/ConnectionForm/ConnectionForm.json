@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "ConnectionForm",
   "name" : "ConnectionForm",
-  "lastUpdate" : 1590740883260,
+  "lastUpdate" : 1590914847676,
   "rows" : [
     [
       {
@@ -232,7 +232,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : ""
+                    "value" : "customer"
                   }
                 },
                 "reference" : "8a15a328-4bf0-4668-aee0-dfd609580966",
@@ -289,7 +289,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : ""
+                    "value" : "customer_1"
                   }
                 },
                 "reference" : "3cfdae18-5616-4083-84a6-10a332399f4c",
@@ -531,6 +531,20 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "customer" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByLogin [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByLogin\",\"displayName\":\"login\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Login\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "customer_1" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByPassword [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByPassword\",\"displayName\":\"password\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Password\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
       ],
       "exposed" : false
     }

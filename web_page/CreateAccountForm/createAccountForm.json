@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "createAccountForm",
   "name" : "createAccountForm",
-  "lastUpdate" : 1590741393222,
+  "lastUpdate" : 1590915060902,
   "rows" : [
     [
       {
@@ -396,7 +396,7 @@
           },
           "value" : {
             "type" : "variable",
-            "value" : "email"
+            "value" : "mail"
           }
         },
         "reference" : "d1841631-ea84-4c33-9afa-30076b66f076",
@@ -781,6 +781,48 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "firstname" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByFirstname [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByFirstname\",\"displayName\":\"firstname\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Firstname\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "lastname" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByLastname [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByLastname\",\"displayName\":\"lastname\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Lastname\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "address" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByAddress [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByAddress\",\"displayName\":\"address\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Address\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "mail" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByEmail [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByEmail\",\"displayName\":\"email\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Email\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "login" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByLogin [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByLogin\",\"displayName\":\"login\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Login\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
+      ],
+      "exposed" : false
+    },
+    "password" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByPassword [com.company.model.Customer]\",\"businessObjectName\":\"Customer\",\"query\":{\"name\":\"findByPassword\",\"displayName\":\"password\"},\"id\":\"com_company_model_Customer\",\"qualifiedName\":\"com.company.model.Customer\",\"filters\":[{\"type\":\"String\",\"name\":\"Password\",\"value\":\"string\"}],\"pagination\":{\"p\":0,\"c\":10}}"
       ],
       "exposed" : false
     }
