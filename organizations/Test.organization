@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Test">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="coline.fardel">
+      <firstName>Coline</firstName>
+      <lastName>Fardel</lastName>
+      <title>Mrs</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="samuel.michellod">
+      <firstName>Samuel</firstName>
+      <lastName>Michellod</lastName>
+      <title>Mr</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="EmployeeRole">
+      <displayName>EmployeeRole</displayName>
+    </role>
+    <role name="CustomerRole">
+      <displayName>CustomerRole</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Customer">
+      <displayName>Customer</displayName>
+    </group>
+    <group name="Employee">
+      <displayName>Employee</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>coline.fardel</userName>
+      <roleName>EmployeeRole</roleName>
+      <groupName>Employee</groupName>
+    </membership>
+    <membership>
+      <userName>samuel.michellod</userName>
+      <roleName>CustomerRole</roleName>
+      <groupName>Customer</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
