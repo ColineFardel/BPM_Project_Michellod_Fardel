@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "ChooseProductV2",
-  "name" : "ChooseProductV2",
-  "lastUpdate" : 1591198463120,
+  "id" : "ChooseProductV3",
+  "name" : "ChooseProductV3",
+  "lastUpdate" : 1591199464601,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "ba0be4a1-a570-402f-bca5-dfeed3cdaa14",
+        "reference" : "fcfbc4cd-dd1f-495a-8f5b-bf303018ffac",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -66,7 +66,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "4f3743b9-f403-4f92-a7c5-7806306f4317",
+              "reference" : "b9b85602-7f27-4c94-9860-430a82f06fdf",
               "hasValidationError" : false,
               "id" : "pbTitle"
             }
@@ -122,7 +122,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "cec852c0-33ce-469b-b9a7-856ec116f140",
+              "reference" : "471d4fd4-116d-4a93-8506-9021e37aec63",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -136,17 +136,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "96f30643-fab9-42e8-9d1e-9c83d3ebb84d",
+        "propertyValues" : { },
+        "reference" : "723dc822-ce50-4536-a250-65bbc7c84046",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -155,7 +146,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "76005fb1-1d2c-4579-955e-0ad2c6d1ed0d",
+          "reference" : "33622e28-ce51-4a8c-9a5b-e97d63f6fe31",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -188,7 +179,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Enter the product number"
+                    "value" : "Choose the product number you want"
                   },
                   "type" : {
                     "type" : "constant",
@@ -244,7 +235,7 @@
                     "value" : 1
                   }
                 },
-                "reference" : "545dfd0b-19d1-447e-9eab-5d3b9f2ed4f8",
+                "reference" : "3304b932-010e-4878-aeaf-e81bbd8c000e",
                 "hasValidationError" : false,
                 "id" : "pbInput"
               }
@@ -352,7 +343,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "1b524fc4-3ad2-4a90-8024-7de936eb9a52",
+                "reference" : "bae5266a-34d3-41dc-9f9e-c979b445d2b6",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -412,7 +403,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4017ff67-b6f0-443b-9ce8-fee656a2f659",
+                "reference" : "33041ec0-a56c-4952-97b7-86ac8ccee364",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -424,7 +415,7 @@
   ],
   "assets" : [
     {
-      "id" : "ad7f5e02-49e3-4f1f-9005-a5f2b61252e9",
+      "id" : "d34bee57-c8c1-42e9-802a-128ae6dbbffe",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -444,9 +435,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"hasAccountInput\" : false,\r",
-        "  \"c_requestProductNumber\" : 0,\r",
-        "  \"c_hasAccount\" : false\r",
+        "  \"c_requestProductNumber\" : 0\r",
         "}"
       ],
       "exposed" : false
@@ -470,9 +459,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\thasAccountInput: $data.formInput.hasAccountInput,",
-        "\tc_requestProductNumber: $data.formInput.c_requestProductNumber,",
-        "\tc_hasAccount: $data.formInput.c_hasAccount",
+        "\tc_requestProductNumber: $data.formInput.c_requestProductNumber",
         "}"
       ],
       "exposed" : false
@@ -493,7 +480,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "07a0f9dd-8ff9-4d60-a9a2-c3587820e708",
+  "uuid" : "f2e4eaaa-3642-4798-98b7-62d02f84d0ee",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

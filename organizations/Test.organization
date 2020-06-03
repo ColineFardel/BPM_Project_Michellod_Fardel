@@ -27,13 +27,13 @@
     <role name="EmployeeRole">
       <displayName>EmployeeRole</displayName>
     </role>
-    <role name="CustomerRole">
-      <displayName>CustomerRole</displayName>
+    <role name="ClientRole">
+      <displayName>ClientRole</displayName>
     </role>
   </roles>
   <groups>
-    <group name="Customer">
-      <displayName>Customer</displayName>
+    <group name="Client">
+      <displayName>Client</displayName>
     </group>
     <group name="Employee">
       <displayName>Employee</displayName>
@@ -47,8 +47,8 @@
     </membership>
     <membership>
       <userName>samuel.michellod</userName>
-      <roleName>CustomerRole</roleName>
-      <groupName>Customer</groupName>
+      <roleName>ClientRole</roleName>
+      <groupName>Client</groupName>
     </membership>
   </memberships>
 </organization:Organization>
