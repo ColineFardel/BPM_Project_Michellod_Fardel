@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.54",
-  "id" : "newForm2",
-  "name" : "newForm2",
-  "lastUpdate" : 1591007012646,
+  "id" : "GiveInfo",
+  "name" : "GiveInfo",
+  "lastUpdate" : 1591286176188,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "cdfd9966-0a6e-4697-9657-e23d58f44c15",
+        "reference" : "8d78aeda-b09b-4313-a9ef-e244ebf2463b",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -66,7 +66,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "9040d92a-e804-474d-8834-f95e53b56e11",
+              "reference" : "b41a0ece-15ad-4958-8f93-268d7e614bf2",
               "hasValidationError" : false,
               "id" : "pbTitle"
             }
@@ -122,7 +122,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "cbb376b1-e43e-4ddb-b1d9-cdacf4399bd2",
+              "reference" : "df233cb7-ea2f-4d95-9a8a-dcaeeeb7176d",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -137,7 +137,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "27fcc98f-3dad-461d-9c16-d5b381e6254e",
+        "reference" : "c6e545ac-c70e-448e-815f-66453dd60aa0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -146,7 +146,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "954ad87b-3912-44bf-866c-1fbd30cc8baa",
+          "reference" : "eb936e8d-7976-4453-95d6-af51238f4d25",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -186,7 +186,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "All Products"
+                    "value" : "Please enter your info for the command"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -201,7 +201,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "48a2ff95-d118-48db-bbfe-2d9fa53447df",
+                "reference" : "983758a4-a353-4637-9da6-827fee4da591",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -215,7 +215,7 @@
                 "propertyValues" : {
                   "repeatedCollection" : {
                     "type" : "variable",
-                    "value" : "allProducts"
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -252,7 +252,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "fd6829ae-3e4c-44b7-8572-4c108989ebb7",
+                "reference" : "9a3537a9-0a2d-4e3e-8319-3f36f5d47421",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -285,7 +285,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Name"
+                          "value" : "Login"
                         },
                         "type" : {
                           "type" : "constant",
@@ -320,10 +320,28 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "$item.Name"
+                          "value" : "customer.Login"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "e8fbc949-1c98-4687-b8c6-3675da464418",
+                      "reference" : "c85c668a-dac5-4e60-bef3-88e271bd5d10",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -357,7 +375,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Product_Number"
+                          "value" : "Password"
                         },
                         "type" : {
                           "type" : "constant",
@@ -392,10 +410,28 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "$item.Product_Number"
+                          "value" : "customer.Password"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "72568461-2490-4796-a5a6-1b764161cc01",
+                      "reference" : "36125a55-ed7d-4d99-81d2-abef4878e29e",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -429,11 +465,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Price"
+                          "value" : "Address"
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "required" : {
                           "type" : "constant",
@@ -464,10 +500,10 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "$item.Price"
+                          "value" : "customer.Address"
                         }
                       },
-                      "reference" : "f40a4ed3-6a6a-47c1-8d21-e918ea12da37",
+                      "reference" : "422e6a5e-5306-4c95-8a1d-ec7cc699a75e",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -501,11 +537,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Number Of Products"
+                          "value" : "Firstname"
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "required" : {
                           "type" : "constant",
@@ -536,10 +572,10 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "$item.NumberOfProducts"
+                          "value" : "customer.Firstname"
                         }
                       },
-                      "reference" : "bc4035bf-1b61-4e99-a007-eb7c33c1820d",
+                      "reference" : "238fffca-8d84-44b6-a664-e38343d8de0b",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -551,10 +587,6 @@
                         "xs" : 12
                       },
                       "propertyValues" : {
-                        "removeItem" : {
-                          "type" : "variable",
-                          "value" : "$item"
-                        },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
@@ -565,11 +597,11 @@
                         },
                         "widgetId" : {
                           "type" : "constant",
-                          "value" : "pbButton"
+                          "value" : "pbInput"
                         },
-                        "buttonStyle" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "danger"
+                          "value" : 1
                         },
                         "readOnly" : {
                           "type" : "constant",
@@ -577,137 +609,122 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-remove\"></span>"
+                          "value" : "Lastname"
                         },
-                        "dataToSend" : {
-                          "type" : "expression"
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "collectionPosition" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : "Item"
+                          "value" : "top"
                         },
-                        "targetUrlOnSuccess" : {
-                          "type" : "interpolation"
-                        },
-                        "action" : {
-                          "type" : "constant",
-                          "value" : "Remove from collection"
-                        },
-                        "collectionToModify" : {
-                          "type" : "variable",
-                          "value" : "$collection"
-                        },
-                        "valueToAdd" : {
-                          "type" : "expression"
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
+                        "placeholder" : {
+                          "type" : "constant"
                         },
                         "alignment" : {
                           "type" : "constant",
-                          "value" : "right"
+                          "value" : "left"
                         },
                         "class" : {
                           "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "customer.Lastname"
                         }
                       },
-                      "reference" : "176a1573-c6ef-462e-9a86-56f4dd74992d",
+                      "reference" : "daa5c3e4-dc1c-4162-a575-ca944ae5a76a",
                       "hasValidationError" : false,
-                      "id" : "pbButton"
+                      "id" : "pbInput"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbInput"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Email"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "customer.Email"
+                        }
+                      },
+                      "reference" : "edf2b123-84f5-4b71-b201-ee14f140f8aa",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
                     }
                   ]
                 ]
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12
-                },
-                "propertyValues" : {
-                  "removeItem" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "widgetId" : {
-                    "type" : "constant",
-                    "value" : "pbButton"
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "primary"
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add Product"
-                  },
-                  "dataToSend" : {
-                    "type" : "expression"
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "collectionPosition" : {
-                    "type" : "constant"
-                  },
-                  "targetUrlOnSuccess" : {
-                    "type" : "interpolation"
-                  },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Add to collection"
-                  },
-                  "collectionToModify" : {
-                    "type" : "variable",
-                    "value" : "allProducts"
-                  },
-                  "valueToAdd" : {
-                    "type" : "expression",
-                    "value" : "{\r\n  \"persistenceId_string\" : \"\",\r\n  \"Name\" : \"\",\r\n  \"Product_Number\" : \"\",\r\n  \"Price\" : 0,\r\n  \"NumberOfProducts\" : 0\r\n}"
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "class" : {
-                    "type" : "constant",
-                    "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "fff8e61b-e917-41a4-8d53-9f58289e9939",
-                "hasValidationError" : false,
-                "id" : "pbButton"
               }
             ],
             [
@@ -790,7 +807,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c18a20ea-5fe8-4ae1-908a-08da751bcb72",
+                "reference" : "dd907c5b-7673-4b6e-8dd5-2397287a5d60",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -850,7 +867,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f2343c02-d891-4391-a04a-2f09b45c10fe",
+                "reference" : "5fe72266-2809-4a96-878f-375090c70c8d",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -862,7 +879,7 @@
   ],
   "assets" : [
     {
-      "id" : "4b955daf-34b4-4b6c-a4ed-78e9ddf7a4b7",
+      "id" : "932a8297-6b4b-4eed-b985-dbeb8478d97a",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -896,16 +913,17 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.allProducts ){",
+        "if( $data.customer ){",
         "\treturn {",
-        "\t\t//map allProducts variable to expected task contract input",
-        "\t\tallProductsInput: $data.allProducts.map( it => ({",
-        "\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
-        "\t\t\tName: it.Name !== undefined ? it.Name : null,",
-        "\t\t\tProduct_Number: it.Product_Number !== undefined ? it.Product_Number : null,",
-        "\t\t\tPrice: it.Price !== undefined ? it.Price : null,",
-        "\t\t\tNumberOfProducts: it.NumberOfProducts !== undefined ? it.NumberOfProducts : null",
-        "\t\t}))",
+        "\t\t//map customer variable to expected task contract input",
+        "\t\tcustomerInput: {",
+        "\t\t\tLogin: $data.customer.Login !== undefined ? $data.customer.Login : null,",
+        "\t\t\tPassword: $data.customer.Password !== undefined ? $data.customer.Password : null,",
+        "\t\t\tAddress: $data.customer.Address !== undefined ? $data.customer.Address : null,",
+        "\t\t\tFirstname: $data.customer.Firstname !== undefined ? $data.customer.Firstname : null,",
+        "\t\t\tLastname: $data.customer.Lastname !== undefined ? $data.customer.Lastname : null,",
+        "\t\t\tEmail: $data.customer.Email !== undefined ? $data.customer.Email : null",
+        "\t\t}",
         "\t}",
         "}"
       ],
@@ -918,23 +936,23 @@
       ],
       "exposed" : false
     },
-    "allProducts" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.allProducts_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
         "id"
       ],
       "exposed" : false
+    },
+    "customer" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.customer_ref.link}}"
+      ],
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "d65dc6d1-2e00-4208-9303-0715c09b7ec5",
+  "uuid" : "d22e3409-696d-4153-890e-8ecad62533d0",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
