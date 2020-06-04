@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "CreateAccountV2",
   "name" : "CreateAccountV2",
-  "lastUpdate" : 1591196179909,
+  "lastUpdate" : 1591274183189,
   "rows" : [
     [
       {
@@ -10,7 +10,20 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
         "reference" : "fff2bd40-23b0-424f-abe6-9877a4883676",
         "hasValidationError" : false,
         "id" : "pbContainer",
@@ -136,7 +149,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "fb8dad30-de8d-43a4-898c-c1c8ae1488f0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -633,7 +655,7 @@
                   },
                   "type" : {
                     "type" : "constant",
-                    "value" : "text"
+                    "value" : "email"
                   },
                   "required" : {
                     "type" : "constant",
@@ -828,6 +850,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "7cda57ac-daf7-4118-bf65-1e1e230c48dd",

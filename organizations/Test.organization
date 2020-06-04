@@ -22,6 +22,15 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="john.doe">
+      <firstName>John</firstName>
+      <lastName>Doe</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="EmployeeRole">
@@ -47,6 +56,11 @@
     </membership>
     <membership>
       <userName>samuel.michellod</userName>
+      <roleName>ClientRole</roleName>
+      <groupName>Client</groupName>
+    </membership>
+    <membership>
+      <userName>john.doe</userName>
       <roleName>ClientRole</roleName>
       <groupName>Client</groupName>
     </membership>

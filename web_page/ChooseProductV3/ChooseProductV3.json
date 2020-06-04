@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "ChooseProductV3",
   "name" : "ChooseProductV3",
-  "lastUpdate" : 1591199464601,
+  "lastUpdate" : 1591274423905,
   "rows" : [
     [
       {
@@ -170,8 +170,7 @@
                     "value" : "pbInput"
                   },
                   "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
+                    "type" : "constant"
                   },
                   "readOnly" : {
                     "type" : "constant",
@@ -225,7 +224,8 @@
                     "value" : ""
                   },
                   "min" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : 0
                   },
                   "max" : {
                     "type" : "constant"
