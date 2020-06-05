@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.54",
   "id" : "ReceiveProduct",
   "name" : "ReceiveProduct",
-  "lastUpdate" : 1591196645075,
+  "lastUpdate" : 1591340573666,
   "rows" : [
     [
       {
@@ -196,7 +196,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "You have reveived your product successfully !"
+                    "value" : "You have received your product successfully !"
                   },
                   "alignment" : {
                     "type" : "constant",

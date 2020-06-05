@@ -223,15 +223,15 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BkYdYZD_Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BkYdY5D_Eeq-c7imKJrgdQ" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_P230cKWsEeqerOI60UoCxQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_P230caWsEeqerOI60UoCxQ" name="review" content="review" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_QsEXEKWsEeqerOI60UoCxQ" name="review" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_P230caWsEeqerOI60UoCxQ" name="clientReview" content="clientReview" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_lNo_YKb5Eeqpm_G7I0sbvw" name="clientReview" dataType="_NB3U0JD8Eeq-c7imKJrgdQ"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_P230cqWsEeqerOI60UoCxQ" name="reviewInput" content="reviewInput" type="TYPE_CONTRACT_INPUT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_R6l_sKWsEeqerOI60UoCxQ" name="reviewInput" createMode="false">
                 <inputs xmi:type="process:ContractInput" xmi:id="_R6l_saWsEeqerOI60UoCxQ" name="Review" createMode="false"/>
               </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_P230c6WsEeqerOI60UoCxQ" type="JAVA_METHOD" expression="setReview">
+            <operator xmi:type="expression:Operator" xmi:id="_P230c6WsEeqerOI60UoCxQ" type="ASSIGNMENT" expression="setReview">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -244,7 +244,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_BkZEdpD_Eeq-c7imKJrgdQ" name="MakeReviewV2" content="d65d975a-8bc7-4555-be9a-9d185eca12e9" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_BkZEdJD_Eeq-c7imKJrgdQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_BmRcoKWsEeqerOI60UoCxQ" name="reviewInput" dataReference="review" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_BmRcoKWsEeqerOI60UoCxQ" name="reviewInput" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_BmRcoaWsEeqerOI60UoCxQ" name="Review" createMode="false"/>
             </inputs>
           </contract>
@@ -441,26 +441,20 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_GCNR7KWrEeqerOI60UoCxQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_JdQOsKWmEeqerOI60UoCxQ" name="hasAccount" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_JdQOsaWmEeqerOI60UoCxQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
-      </data>
       <data xmi:type="process:Data" xmi:id="_jGZ9sKWnEeqerOI60UoCxQ" name="requestProductNumber" dataType="_NB3UzZD8Eeq-c7imKJrgdQ">
         <defaultValue xmi:type="expression:Expression" xmi:id="_jGZ9saWnEeqerOI60UoCxQ" content="" returnType="java.lang.Integer"/>
       </data>
-      <data xmi:type="process:Data" xmi:id="_lKwbEKWnEeqerOI60UoCxQ" name="hasAnAccount" dataType="_NB3Uy5D8Eeq-c7imKJrgdQ">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_lKwbEaWnEeqerOI60UoCxQ" content="" returnType="java.lang.Boolean"/>
-      </data>
       <data xmi:type="process:Data" xmi:id="_KLW4kKWrEeqerOI60UoCxQ" name="makeReview" dataType="_NB3Uy5D8Eeq-c7imKJrgdQ">
         <defaultValue xmi:type="expression:Expression" xmi:id="_KLW4kaWrEeqerOI60UoCxQ" content="" returnType="java.lang.Boolean"/>
-      </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_7hM70KWrEeqerOI60UoCxQ" name="review" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_7hM70aWrEeqerOI60UoCxQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_wGqjYKZ1EeqiGOBjJUNSXA" name="productChosen" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Product">
         <defaultValue xmi:type="expression:Expression" xmi:id="_wGqjYaZ1EeqiGOBjJUNSXA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_yJNikKZ4EeqiGOBjJUNSXA" name="customer" dataType="_NB3U05D8Eeq-c7imKJrgdQ" className="com.company.model.Customer">
         <defaultValue xmi:type="expression:Expression" xmi:id="_yJNikaZ4EeqiGOBjJUNSXA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_cXSpwKb5Eeqpm_G7I0sbvw" name="clientReview" dataType="_NB3U0JD8Eeq-c7imKJrgdQ">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_cXSpwab5Eeqpm_G7I0sbvw" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_YujlX5D8Eeq-c7imKJrgdQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_xUFRcqW0EeqwWOul-QccGQ" name="ChooseProductV3" content="f2e4eaaa-3642-4798-98b7-62d02f84d0ee" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
